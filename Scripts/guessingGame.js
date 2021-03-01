@@ -31,7 +31,7 @@ function checkGuess() {
     lastResult.textContent = 'Wrong!';
     lastResult.style.backgroundColor = 'red';
     if(userGuess < randomNumber) {
-      lowOrHi.textContent = 'Guess number ' + guessCount\n;
+      lowOrHi.textContent = 'Guess number ' + guessCount + '\n';
 	lowOrHi.textContent += '  Last guess was too low!';
     } else if(userGuess > randomNumber) {
       lowOrHi.textContent = 'Guess number ' + guessCount + ' Last guess was too high!';
