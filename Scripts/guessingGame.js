@@ -19,7 +19,12 @@ function checkGuess() {
   guesses.textContent += userGuess + ' ';
 
   if (userGuess === randomNumber) {
+    if ( guessCount > 1 ){
     lastResult.textContent = 'Congratulations! You got it right in ' + guessCount + ' guesses!';
+    }
+    if ( guessCount === 1 ){
+    lastResult.textContent = 'Congratulations! You got it right in ' + guessCount + ' guess!';
+    }
     lastResult.style.backgroundColor = 'green';
     // lowOrHi.textContent = '';
     setGameOver();
