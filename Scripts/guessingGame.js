@@ -20,7 +20,7 @@ function checkGuess() {
 
   if (userGuess === randomNumber) {
     lastResult.textContent = 'Congratulations! You got it right!';
-    lastResult.style.backgroundColor = 'green';
+    lastResult.style.backgroundColor = ' flashing green';
     lowOrHi.textContent = '';
     setGameOver();
   } else if (guessCount === 10) {
@@ -30,10 +30,10 @@ function checkGuess() {
     lastResult.textContent = 'Wrong!';
     lastResult.style.backgroundColor = 'red';
     if(userGuess < randomNumber) {
-      lowOrHi.textContent = 'Guess number ' + guessCount + 1;
+      lowOrHi.textContent = 'Guess number ' + +=guessCount;
 	lowOrHi.textContent += '  Last guess was too low!';
     } else if(userGuess > randomNumber) {
-      lowOrHi.textContent = 'Guess number ' + guessCount + 1 + ' Last guess was too high!';
+      lowOrHi.textContent = 'Guess number ' + guessCount++ + ' Last guess was too high!';
     }
   }
 
