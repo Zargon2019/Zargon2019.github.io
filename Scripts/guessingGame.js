@@ -25,6 +25,7 @@ function checkGuess() {
     setGameOver();
   } else if (guessCount === 10) {
     lastResult.textContent = '!!!GAME OVER!!!  Correct number was: ' + randomNumber;
+    lowOrHi.textContent = '';
     setGameOver();
   } else {
     lastResult.textContent = 'Wrong!';
