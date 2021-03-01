@@ -21,11 +21,11 @@ function checkGuess() {
   if (userGuess === randomNumber) {
     lastResult.textContent = 'Congratulations! You got it right in ' + guessCount + ' guesses!';
     lastResult.style.backgroundColor = 'green';
-    lowOrHi.textContent = '';
+    // lowOrHi.textContent = '';
     setGameOver();
   } else if (guessCount === 10) {
     lastResult.textContent = '!!!GAME OVER!!!  Correct number was: ' + randomNumber;
-    lowOrHi.textContent = '';
+    // lowOrHi.textContent = '';
     setGameOver();
   } else {
     lastResult.textContent = 'Wrong!';
