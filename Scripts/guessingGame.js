@@ -24,16 +24,16 @@ function checkGuess() {
     lowOrHi.textContent = '';
     setGameOver();
   } else if (guessCount === 10) {
-    lastResult.textContent = '!!!GAME OVER!!!';
+    lastResult.textContent = 'Guess number ' + guessCount + '!!!GAME OVER!!!';
     setGameOver();
   } else {
     lastResult.textContent = 'Wrong!';
     lastResult.style.backgroundColor = 'red';
     if(userGuess < randomNumber) {
-      lowOrHi.textContent = 'Guess number ' + ( guessCount++ );
+      lowOrHi.textContent = 'Guess number ' + guessCount;
 	lowOrHi.textContent += '  Last guess was too low!';
     } else if(userGuess > randomNumber) {
-      lowOrHi.textContent = 'Guess number ' + ( guessCount++ ) + ' Last guess was too high!';
+      lowOrHi.textContent = 'Guess number ' + guessCount + ' Last guess was too high!';
     }
   }
 
