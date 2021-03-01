@@ -16,7 +16,7 @@ function checkGuess() {
   if (guessCount === 1) {
     guesses.textContent = 'Previous guesses: ';
   }
-  guesses.textContent = userGuess + ' ';
+  guesses.textContent += userGuess + ' ';
 
   if (userGuess === randomNumber) {
     lastResult.textContent = 'Congratulations! You got it right!';
@@ -30,10 +30,10 @@ function checkGuess() {
     lastResult.textContent = 'Wrong!';
     lastResult.style.backgroundColor = 'red';
     if(userGuess < randomNumber) {
-      lowOrHi.textContent = 'Guess number ' + guessCount;
+      lowOrHi.textContent = 'Guess number ' + ( guessCount++ );
 	lowOrHi.textContent = '  Last guess was too low!';
     } else if(userGuess > randomNumber) {
-      lowOrHi.textContent = 'Guess number ' + guessCount + ' Last guess was too high!';
+      lowOrHi.textContent = 'Guess number ' + ( guessCount++ ) + ' Last guess was too high!';
     }
   }
 
