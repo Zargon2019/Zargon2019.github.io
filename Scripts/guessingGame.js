@@ -45,6 +45,7 @@ function checkGuess() {
 guessSubmit.addEventListener('click', checkGuess);
 
 function setGameOver() {
+  lowOrHi.textContent = '';
   guessField.disabled = true;
   guessSubmit.disabled = true;
   resetButton = document.createElement('button');
