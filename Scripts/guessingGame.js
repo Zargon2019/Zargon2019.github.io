@@ -44,6 +44,7 @@ function checkGuess() {
 	}
     } else if ( userGuess > randomNumber ) {
       lowOrHi.textContent = 'Guess number ' + guessCount + ' Last guess was too high!';
+      lastResult.style.backgroundColor = 'green'
     }
   }
 
