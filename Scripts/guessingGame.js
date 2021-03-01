@@ -20,7 +20,7 @@ function checkGuess() {
 
   if (userGuess === randomNumber) {
     lastResult.textContent = 'Congratulations! You got it right!';
-    lastResult.style.backgroundColor = ' flashing green';
+    lastResult.style.backgroundColor = 'green';
     lowOrHi.textContent = '';
     setGameOver();
   } else if (guessCount === 10) {
