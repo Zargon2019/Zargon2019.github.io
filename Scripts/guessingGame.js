@@ -29,7 +29,7 @@ function checkGuess() {
     // lowOrHi.textContent = '';
     setGameOver();
   } else if ( guessCount === 10 ) {
-    lastResult.textContent = '!!!GAME OVER!!!  Correct number was: ' + randomNumber;
+    lastResult.textContent = '!!!GAME OVER!!!  Correct number was ' + randomNumber;
     // lowOrHi.textContent = '';
     setGameOver();
   } else {
@@ -40,7 +40,7 @@ function checkGuess() {
 	lowOrHi.textContent += ' Last guess was too low!';
 	if ( guessCount === 9 ) {
 		lowOrHi.textContent += ' One more guess to go!';
-		lastResult.style.backgroundColor = 'red';
+		lastResult.style.backgroundColor = 'blue';
 	}
     } else if ( userGuess > randomNumber ) {
       lowOrHi.textContent = 'Guess number ' + guessCount + ' Last guess was too high!';
