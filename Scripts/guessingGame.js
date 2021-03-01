@@ -19,7 +19,7 @@ function checkGuess() {
   guesses.textContent += userGuess + ' ';
 
   if (userGuess === randomNumber) {
-    lastResult.textContent = 'Congratulations! You got it right!';
+    lastResult.textContent = 'Congratulations! You got it right in ' + guessCount + 'guesses!';
     lastResult.style.backgroundColor = 'green';
     lowOrHi.textContent = '';
     setGameOver();
