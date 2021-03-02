@@ -1,4 +1,3 @@
-<script type="text/javascript">
 let randomNumber = Math.floor( Math.random() * 100 ) + 1;
 
 	const guesses = document.querySelector( '.guesses' );
@@ -85,4 +84,3 @@ function resetGame() {
 
   randomNumber = Math.floor( Math.random() * 100 ) + 1;
 }
-</script>
