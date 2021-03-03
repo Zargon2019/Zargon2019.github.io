@@ -44,7 +44,7 @@ function checkGuess() {
 		lastResult.style.backgroundColor = 'blue';
 	}
     } else if ( userGuess > randomNumber ) {
-      lowOrHi.textContent = 'Guess number ' + guessCount + '. Last guess was too high!';
+      lowOrHi.textContent = 'Guess number ' + guessCount + '. ' + userGuess + ' is too high!';
       lastResult.style.backgroundColor = 'green'
     }
   }
@@ -82,5 +82,5 @@ function resetGame() {
 
   lastResult.style.backgroundColor = 'white';
 
-  randomNumber = Math.floor( Math.random() * 100 ) + 1;
+  randomNumber = Math.floor( Math.random() * 1000 ) + 1;
 }
