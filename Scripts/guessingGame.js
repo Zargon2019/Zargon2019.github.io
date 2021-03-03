@@ -29,7 +29,7 @@ function checkGuess() {
     // lowOrHi.textContent = '';
     setGameOver();
   } else if ( guessCount === 10 ) {
-    lastResult.textContent = '!!!GAME OVER!!!' + "<br>" +  'Correct number was ' + randomNumber + '.';
+    lastResult.textContent = '!!!GAME OVER!!!' + '<br>' +  'Correct number was ' + randomNumber + '.';
     lastResult.style.backgroundColor = 'green';
     // lowOrHi.textContent = '';
     setGameOver();
