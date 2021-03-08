@@ -12,6 +12,7 @@ let randomNumber = Math.floor( Math.random() * 1000 ) + 1;
 	guessField.focus();
 	
 function checkGuess() {
+  var a = event.key
   let userGuess = Number( guessField.value );
   if ( guessCount === 1 ) {
     guesses.textContent = 'Previous guesses: ';
@@ -53,7 +54,7 @@ function checkGuess() {
   guessField.value = '';
   guessField.focus();
 }
-guessSubmit.addEventListener('Enter', checkGuess);
+guessSubmit.addEventListener('click', checkGuess);
 
 function setGameOver() {
   lowOrHi.textContent = '';
