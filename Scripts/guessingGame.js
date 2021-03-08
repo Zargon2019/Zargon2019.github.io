@@ -53,7 +53,7 @@ function checkGuess() {
   guessField.value = '';
   guessField.focus();
 }
-guessSubmit.addEventListener('click', checkGuess);
+guessSubmit.addEventListener('Enter', checkGuess);
 
 function setGameOver() {
   lowOrHi.textContent = '';
